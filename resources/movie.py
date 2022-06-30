@@ -179,5 +179,6 @@ class MovieSearchResource(Resource) :
 
         return {'result' : 'success',
                 'count' : len(result_list) ,
-                'items' : result_list}, 200
+                'items' : result_list,
+                'data' : 'hello'}, 200
 
