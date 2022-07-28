@@ -136,7 +136,7 @@ class MovieSearchResource(Resource) :
         try :
             connection = get_connection()
 
-            query = '''select m.title , 
+            query = '''select m.id, m.title , 
                     count(r.movieId) as cnt, 
                     ifnull(avg(r.rating) , 0) as avg
                     from movie m 
